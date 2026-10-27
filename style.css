@@ -1,0 +1,155 @@
+:root {
+    --main-accent-color: #779611;
+    --main-text-color: #000000;
+    --second-text-color: #707070;
+--alternate-text-color: #F9F9F9;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+ul {
+padding: 0;
+list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1750;
+    width: 100%;
+    padding: 0 15px;
+}
+
+/* text styles */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+
+.logo, .hero_title, .section_title {
+     font-family: "Exo 2", sans-serif;
+     color: var(--main-accent-color)
+}
+
+.superscript {
+    vertical-align: super; /* Сдвигает текст вверх */
+    font-size: 0.75em;     /* Уменьшает размер (обычно на 20-25%) */
+    line-height: 0;        /* Предотвращает искажение межстрочного интервала */
+}
+
+/* content styles */
+
+header .container{
+  height: 120px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 120px;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 600;
+}
+.menu {
+    display: flex;
+    width: 437px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    color: var(--second-text-color);
+
+}
+
+/* hero */
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid var(--main-accent-color);
+    border-bottom: 2px solid var(--main-accent-color);
+}
+
+.hero_img_container {
+    width: 660px;
+    height: 823px;
+    background-color: var(--second-text-color);
+}
+.hero_title {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.hero_text {
+    font-size: 24px;
+    width: 520px;
+    margin-top: 50px;
+}
+
+.hero_btn {
+    height: 75px;
+    width: 224px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--main-accent-color);
+    color: var(--alternate-text-color);
+    font-size: 32px;
+border-radius: 70px;
+margin-top: 50px;
+}
+
+
+.shop, .subscription, .about_us {
+    padding-top: 80px;
+}
+
+.section_title {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.shop_text, .subscription_text {
+    max-width: 512px;
+    width: 100%;
+
+}
+
+.shop_list, .subscription_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.shop_item, .subscription_item {
+    flex-grow: 1;
+}
+
+.shop_img, .subscription_img {
+    height: 700px;
+    background-color: var(--second-text-color);
+}
+
+.shop_subtitle {
+    font-size: 24px;
+    color: var(--main-accent-color);
+    margin-top: 35px;
+}
+
+.footer-menu {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
